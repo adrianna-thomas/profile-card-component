@@ -17,12 +17,66 @@ body {
     background: var(--Dark-cyan);
     align-items: center;
     min-height: 100vh;
+    min-width: 100vw;
+    font-size: 18px;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .container {
-    margin: 0 auto;
     text-align: center;
-    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.wrapper {
+    background-color: #FFF;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    margin-top: -15%;
+    margin-bottom: 5%;
+}
+
+.content h1 {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.content p {
+    color: var(--Dark-grayish-blue);
+    font-size: .8rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: .5px solid var(--Dark-grayish-blue);
+    margin-top: 8%;
+}
+
+.stat-row {
+    margin: 2rem;
+}
+
+.footer p.num {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--Very-dark-desaturated-blue);
 }
 
 .attribution {
