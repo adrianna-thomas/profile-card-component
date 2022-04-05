@@ -79,6 +79,10 @@ span {
     color: var(--Very-dark-desaturated-blue);
 }
 
+.header {
+    width: 100%;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
